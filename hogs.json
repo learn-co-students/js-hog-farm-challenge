@@ -22,7 +22,7 @@
       "id": 2,
       "name": "Cherub",
       "specialty": "truffle finder",
-      "greased": false,
+      "greased": true,
       "weight as a ratio of hog to LG - 24.7 Cu. Ft. French Door Refrigerator with Thru-the-Door Ice and Water": 0.7,
       "highest medal achieved": "gold",
       "image": "./hog-imgs/cherub.jpg"
@@ -94,7 +94,7 @@
       "id": 10,
       "name": "Galaxy Note",
       "specialty": "Airport Security",
-      "greased": true,
+      "greased": false,
       "weight as a ratio of hog to LG - 24.7 Cu. Ft. French Door Refrigerator with Thru-the-Door Ice and Water": 1.9,
       "highest medal achieved": "diamond",
       "image": "./hog-imgs/galaxy_note.jpg"
@@ -109,13 +109,40 @@
       "image": "./hog-imgs/leggo_my_eggo.jpg"
     },
     {
-      "id": 12,
-      "name": "Augustus Gloop",
-      "specialty": "Vacuum tubes",
+      "name": "Susanna",
+      "specialty": "Eating",
+      "weight as a ratio of hog to LG - 24.7 Cu. Ft. French Door Refrigerator with Thru-the-Door Ice and Water": "1000",
+      "highest medal achieved": "Silver",
+      "image": "https://cdn.recolor.com/u/OMLGCTpc6pggQPIi7SkSYE69m572/profile",
+      "greased": false,
+      "id": 13
+    },
+    {
+      "name": "Paavo",
+      "specialty": "talking",
+      "weight as a ratio of hog to LG - 24.7 Cu. Ft. French Door Refrigerator with Thru-the-Door Ice and Water": "100",
+      "highest medal achieved": "gold",
+      "image": "https://cdn.recolor.com/u/OMLGCTpc6pggQPIi7SkSYE69m572/profile",
       "greased": true,
-      "weight as a ratio of hog to LG - 24.7 Cu. Ft. French Door Refrigerator with Thru-the-Door Ice and Water": 4.1,
-      "highest medal achieved": "wood",
-      "image": "./hog-imgs/augustus_gloop.jpg"
+      "id": 14
+    },
+    {
+      "name": "Me",
+      "specialty": "just me",
+      "weight as a ratio of hog to LG - 24.7 Cu. Ft. French Door Refrigerator with Thru-the-Door Ice and Water": "1000",
+      "highest medal achieved": "bronze",
+      "image": "https://cdn.recolor.com/u/OMLGCTpc6pggQPIi7SkSYE69m572/profile",
+      "greased": false,
+      "id": 15
+    },
+    {
+      "name": "Susa",
+      "specialty": "all",
+      "weight as a ratio of hog to LG - 24.7 Cu. Ft. French Door Refrigerator with Thru-the-Door Ice and Water": "90",
+      "highest medal achieved": "platinum",
+      "image": "",
+      "greased": true,
+      "id": 16
     }
   ]
 }
