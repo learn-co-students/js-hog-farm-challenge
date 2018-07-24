@@ -1,15 +1,6 @@
 {
   "hogs": [
     {
-      "id": 4,
-      "name": "Trouble",
-      "specialty": "Racing",
-      "greased": false,
-      "weight as a ratio of hog to LG - 24.7 Cu. Ft. French Door Refrigerator with Thru-the-Door Ice and Water": 1.7,
-      "highest medal achieved": "gold",
-      "image": "./hog-imgs/trouble.jpg"
-    },
-    {
       "id": 5,
       "name": "Sobriety",
       "specialty": "Expert Witness",
@@ -76,19 +67,10 @@
       "id": 12,
       "name": "Augustus Gloop",
       "specialty": "Vacuum tubes",
-      "greased": true,
+      "greased": false,
       "weight as a ratio of hog to LG - 24.7 Cu. Ft. French Door Refrigerator with Thru-the-Door Ice and Water": 4.1,
       "highest medal achieved": "wood",
       "image": "./hog-imgs/augustus_gloop.jpg"
-    },
-    {
-      "name": "Grease Master",
-      "specialty": "Spelling",
-      "highest medal achieved": "Gold",
-      "weight as a ratio of hog to LG - 24.7 Cu. Ft. French Door Refrigerator with Thru-the-Door Ice and Water": "5",
-      "image": "",
-      "greased": true,
-      "id": 13
     }
   ]
 }

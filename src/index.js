@@ -8,7 +8,9 @@ document.addEventListener("DOMContentLoaded", function() {
     let weight = document.getElementById("weight").value;
     let image = document.getElementById("img").value;
     let greased = document.getElementById("greased").checked;
-    postHog(name, speciality, medal, weight, image, greased);
+    if (name) {
+      postHog(name, speciality, medal, weight, image, greased);
+    }
   });
 });
 
@@ -29,7 +31,6 @@ function patchHog(hog, greased) {
   })
     .then(response => response.json())
     .then(hog => {
-      //do something
       console.log(hog);
     });
 }
@@ -73,30 +74,32 @@ function renderHog(hog) {
   newHogCard = document.createElement("div");
   container.appendChild(newHogCard);
   newHogCard.className = "hog-card";
-  let name = document.createElement("p");
-  name.innerHTML = `Name: ${hog.name}`;
+  let name = document.createElement("h2");
+  name.innerHTML = `${hog.name}`;
   let speciality = document.createElement("p");
   speciality.innerHTML = `Specialty: ${hog.specialty}`;
   let medal = document.createElement("p");
   medal.innerHTML = `Highest Medal Achieved: ${hog["highest medal achieved"]}`;
   let weight = document.createElement("p");
-  weight.innerHTML = `Weight, etc: ${
+  weight.innerHTML = `Weight, in fridges, or something like that: ${
     hog[
       "weight as a ratio of hog to LG - 24.7 Cu. Ft. French Door Refrigerator with Thru-the-Door Ice and Water"
     ]
   }`;
   let image = document.createElement("img");
   image.src = `${hog.image}`;
+  image.style = "border-style: solid; border-width: 2.5px;";
   let greased = document.createElement("input");
   greased.type = "checkbox";
   let greasedLabel = document.createElement("p");
   greasedLabel.innerHTML = "Greased?";
   greased.checked = hog.greased ? true : false;
 
+  let lineBreak = document.createElement("p");
+
   let deleteButton = document.createElement("button");
   deleteButton.innerText = "delete";
 
-  newHogCard.appendChild(deleteButton);
   newHogCard.appendChild(name);
   newHogCard.appendChild(speciality);
   newHogCard.appendChild(medal);
@@ -104,6 +107,8 @@ function renderHog(hog) {
   newHogCard.appendChild(image);
   newHogCard.appendChild(greasedLabel);
   newHogCard.appendChild(greased);
+  newHogCard.appendChild(lineBreak);
+  newHogCard.appendChild(deleteButton);
 
   greased.addEventListener("change", function(event) {
     patchHog(hog, greased.checked);
